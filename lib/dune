@@ -1,0 +1,3 @@
+(library
+ (name aiyu_cbor)
+ (public_name aiyu_cbor))

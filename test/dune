@@ -1,6 +1,12 @@
 (test
  (name main)
- (modules main aiyu_cbor_test unint64_cases int_cases int64_cases additional_cases)
+ (modules
+  main
+  aiyu_cbor_test
+  unint64_cases
+  int_cases
+  int64_cases
+  additional_cases)
  (libraries aiyu_cbor alcotest hex)
  (preprocess
   (pps ppx_deriving.show ppx_deriving.eq)))

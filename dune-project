@@ -1,11 +1,11 @@
 (lang dune 3.21)
 
-(name aiyu_cbor)
+(name lokto_cbor)
 
 (generate_opam_files true)
 
 (package
- (name aiyu_cbor)
+ (name lokto_cbor)
  (depends
   ocaml
   (ppx_deriving :with-test)

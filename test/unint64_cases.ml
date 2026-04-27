@@ -26,7 +26,7 @@ module Unint64 = struct
   let to_nint64 = function U _ -> None | N nint64 -> Some nint64
 end
 
-module M = Aiyu_cbor_test.Make (Unint64)
+module M = Lokto_cbor_test.Make (Unint64)
 
 let examples =
   let open M.Cbor in

@@ -27,7 +27,7 @@ module Int64 = struct
     else None
 end
 
-module M = Aiyu_cbor_test.Make (Int64)
+module M = Lokto_cbor_test.Make (Int64)
 
 let examples =
   let open M.Cbor in

@@ -1,4 +1,4 @@
-# Aiyu_cbor
+# Lokto_cbor
 
 Yet Another CBOR encoder/decoder library (with no dependencies)
 
@@ -10,12 +10,12 @@ In dune-project:
 (package
   (depends
     ...
-    aiyu_cbor)
+    lokto_cbor)
 
 (pin
-  (url "git+https://github.com/itswindtw/aiyu_cbor")
+  (url "git+https://github.com/itswindtw/lokto_cbor")
   (package
-    (name aiyu_cbor)))
+    (name lokto_cbor)))
 ```
 
 In code:
@@ -43,7 +43,7 @@ module Int = struct
   let to_nint64 t = if t < 0 then Some (Int64.of_int (-(t + 1))) else None
 end
 
-module Cbor = Aiyu_cbor.Make (Int)
+module Cbor = Lokto_cbor.Make (Int)
 
 let cbor = Cbor.decode "\x00"
 let bytes = Cbor.encode cbor

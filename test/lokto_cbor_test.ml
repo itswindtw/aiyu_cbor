@@ -1,11 +1,11 @@
 module Make (I : sig
-  include Aiyu_cbor.Integer
+  include Lokto_cbor.Integer
 
   val pp : Format.formatter -> t -> unit
   val equal : t -> t -> bool
 end) =
 struct
-  module Cbor = Aiyu_cbor.Make (I)
+  module Cbor = Lokto_cbor.Make (I)
 
   module Cbor_derived = struct
     type t = Cbor.t =

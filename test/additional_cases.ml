@@ -1,4 +1,4 @@
-module M = Aiyu_cbor_test.Make (Unint64_cases.Unint64)
+module M = Lokto_cbor_test.Make (Unint64_cases.Unint64)
 
 let decode_ok s =
   match M.Cbor.decode s with
